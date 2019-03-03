@@ -1,3 +1,5 @@
+/*Home page style*/
+
 #lookboktab {
 	position: relative; 
 	top: 14px; 
@@ -8,4 +10,15 @@
 
 #lookboktab:hover {
     color: #fff;
+}
+
+/*Lookbook page style*/
+
+.page-title {
+	text-align: center !important;
+	margin: 36px 0;
+}
+
+.ps-source-username {
+	color: #fff !important;
 }

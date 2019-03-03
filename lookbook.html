@@ -11,7 +11,10 @@
   "@type": "WebPage"
 } </script> <!-- End MetaTags Custom --> <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"> <!--[if lt IE 9]> <link type="text/css" rel="stylesheet" href="/css/ie.less"><script src="/js/respond.js" type="text/javascript"></script> <![endif]--> <link type="text/css" rel="stylesheet" href="css/photoslurp.css">
 
-<link type="text/css" rel="stylesheet" href="css/styles-min.css"> <link type="text/css" rel="stylesheet" href="css/custom.less" /> <script type="text/javascript"> var _root =                 "/",
+<link type="text/css" rel="stylesheet" href="css/styles-min.css"> <link type="text/css" rel="stylesheet" href="css/custom.less" />
+<link type="text/css" rel="stylesheet" href="css/photosurp.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ <script type="text/javascript"> var _root =                 "/",
             _shopName =             "Christine le Duc",
             LANG_ERROR =            "Er is een fout opgetreden",
             LANG_LOADING =          "De data wordt geladen, een moment geduld alstublieft",
@@ -105,7 +108,7 @@ if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side frame
 
 <article class="instashop-sheet">
   
-  <div class="page-title">
+  <div class="page-title" data-aos="zoom-in-up">
     <h1 class="no-background">InstaShop Gallery</h1>
   </div>
   
@@ -118,7 +121,7 @@ if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side frame
   }
 }
 --></style><!-- Start Photoslurp Embed Code -->
-<div id="photoslurpgallery" class="ps-container">
+<div id="photoslurpgallery" class="ps-container" data-aos="zoom-in">
 <script data-type="photoslurp">// <![CDATA[
 if(!photoSlurpWidgetSettings) { 
       var photoSlurpWidgetSettings = {}; 
@@ -163,4 +166,16 @@ if(!photoSlurpWidgetSettings) {
             $.cookie(_shopName + 'Cookie', 'cookieNoticeRead', { expires: 100, path: '/' });
             return false;
         });
-    } </script> <div class="hidden"> <div class="promotionCode"> &nbsp; <div id="promotionInputWrapper"> <input name="ctl00$ctl60$tbxPromotionCode" type="text" maxlength="50" id="tbxPromotionCode" class="inputCode" /> <a id="ctl60_lbAddPromotionCode" class="bttn" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl60$lbAddPromotionCode&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Verzilveren</a> <div class="clear"></div> </div> </div></div> <div class="aspNetHidden"> <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" /> <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="Et9Ila900M84v5rTNAmbd2rLQmvU4scbslgUlK+UU8kfn890L3DGhCHhMiP6lwNh12kk2z026tQ8r6FyY8p1V1HRexjHt+BFXVwGvaTjaV2tvGXUDJRe2dAlT37L9vxjKM2KNbTgIdl2328Zpl9WbZfhTWwOw62tnLVpgCgiVn8=" /> </div></form> </body> </html><!-- 0.062 seconds //-->
+    } </script> <div class="hidden"> <div class="promotionCode"> &nbsp; <div id="promotionInputWrapper"> <input name="ctl00$ctl60$tbxPromotionCode" type="text" maxlength="50" id="tbxPromotionCode" class="inputCode" /> <a id="ctl60_lbAddPromotionCode" class="bttn" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl60$lbAddPromotionCode&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Verzilveren</a> <div class="clear"></div> </div> </div></div> <div class="aspNetHidden"> <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" /> <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="Et9Ila900M84v5rTNAmbd2rLQmvU4scbslgUlK+UU8kfn890L3DGhCHhMiP6lwNh12kk2z026tQ8r6FyY8p1V1HRexjHt+BFXVwGvaTjaV2tvGXUDJRe2dAlT37L9vxjKM2KNbTgIdl2328Zpl9WbZfhTWwOw62tnLVpgCgiVn8=" /> </div></form> 
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+{
+    once: true,
+});
+  </script>
+
+
+    </body>
+     </html><!-- 0.062 seconds //-->
